@@ -37,11 +37,6 @@ static char *const NameTagKey = "flk_nameTag";
 
 - (NSString *)flk_autolayoutTrace
 {
-#ifdef DEBUG
-    if ([self respondsToSelector:@selector(_autolayoutTrace)]) {
-        return [self performSelector:@selector(_autolayoutTrace)];
-    }
-#endif
     return nil;
 }
 
